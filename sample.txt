@@ -1,0 +1,38 @@
+URL:
+http://localhost:8080/api/generate/otp
+
+REQUEST BODY: 
+{
+    "logs_id": "202408130800010001",
+    "nik": "3322111308240010",
+    "key": "081234567891"
+}
+
+RESPONSE:
+{
+    "logs_id": "202408130800010001",
+    "nik": "3322111308240010",
+    "key": "081234567891",
+    "otp": "424523",
+    "attempt_generate": "1"
+}
+
+URL:
+http://localhost:8080/api/validate/otp
+
+REQUEST BODY: 
+{
+    "logs_id": "202408130800010001",
+    "nik": "3322111308240010",
+    "key": "081234567891",
+    "otp_value": "424523"
+}
+
+RESPONSE:
+{
+    "logs_id": "202408130800010001",
+    "nik": "3322111308240010",
+    "key": "081234567891",
+    "status_validate": "True",
+    "attempt_fail": "0"
+}
